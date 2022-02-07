@@ -31,6 +31,58 @@
         'https://chimpstatic.com/mcjs-connected/js/users/367515bc18a42201a0c327548/03c5cac763592f660adb962dd.js'
       );
     </script>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          'page',
+          'track',
+          'identify',
+          'instances',
+          'debug',
+          'on',
+          'off',
+          'once',
+          'ready',
+          'alias',
+          'group',
+          'enableCookie',
+          'disableCookie',
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement('script');
+            (o.type = 'text/javascript'),
+              (o.async = !0),
+              (o.src = i + '?sdkid=' + e + '&lib=' + t);
+            var a = document.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load('C80FLEEVLJR68Q6CO5P0');
+        ttq.page();
+      })(window, document, 'ttq');
+    </script>
     <meta
       charset="UTF-8"
       style="
@@ -2761,49 +2813,7 @@
           color: rgb(36, 28, 21);
           border-top: none;
         "
-      >
-        <div
-          class="contentContainer mcPrivacyBadgeContent"
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: auto;
-          "
-        >
-          <div class="reportAbuseWrapper">
-            <a
-              class="privacyLink report-abuse"
-              target="_blank"
-              href="https://mailchimp.com/contact/abuse/"
-              style="color: rgb(36, 28, 21)"
-              >Report abuse</a
-            >
-          </div>
-          <a
-            class="monkeyrewards"
-            target="_blank"
-            href="https://mailchimp.com/referral/?utm_source=freemium_landingpage&amp;utm_medium=landingpage&amp;utm_campaign=referral_marketing"
-            style="
-              width: 163px;
-              height: 40px;
-              display: flex;
-              font-size: 10px;
-              align-items: center;
-              margin-left: 12px;
-              text-decoration: none;
-              color: rgb(36, 28, 21);
-            "
-          >
-            Created with
-            <img
-              src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark.svg"
-              style="margin-left: 6px; width: 100px"
-              class="logo"
-            />
-          </a>
-        </div>
-      </div>
+      ></div>
     </div>
     <div data-dojo-type="mojo/widgets/pages/PaymentGalleryImages"></div>
     <div id="uniqName_10_0" widgetid="uniqName_10_0">
